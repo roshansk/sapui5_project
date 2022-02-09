@@ -1,0 +1,33 @@
+<mvc:View
+    controllerName="webapp.controller.GroceryItemInput"
+    xmlns="sap.m"
+    xmlns:mvc="sap.ui.core.mvc">
+    
+    <Panel 
+        backgroundDesign="Transparent">
+        <content>
+            <Title
+            titleStyle="H4"
+            text="{/infoMsgs/groceryInputMsg}"
+            class="sapUiSmallMarginTop sapUiSmallMarginBottom"
+            width="100%"/>
+
+            <Input 
+                value="{/groceryInput/item}"
+                showClearIcon="true"
+                valueLiveUpdate="true"
+                width="60%"
+                placeholder="'Apples'"/>
+
+            <Button 
+                text="Add"
+                class="sapUiSmallMarginBeginEnd"
+                icon="sap-icon://cart-approval"
+                iconFirst="true"
+                buttonType="Attention"
+                press=".getItem"/>
+
+        </content>
+    </Panel>
+    
+</mvc:View>

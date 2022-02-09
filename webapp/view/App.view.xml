@@ -1,0 +1,26 @@
+<mvc:View
+   controllerName="webapp.controller.App"
+   xmlns="sap.m"
+   xmlns:mvc="sap.ui.core.mvc"
+   displayBlock="true">
+   <Shell>
+      <App>
+         <pages>
+            <Page title="">
+              <content>
+                  <Panel 
+                     headerText="{i18n>appHeader}"
+                     class="sapUiResponsiveMargin"
+                     
+                     width="auto">
+                     <mvc:XMLView 
+                        viewName="webapp.view.GroceryItemInput"/>
+                     <mvc:XMLView 
+                        viewName="webapp.view.ItemList"/>   
+                  </Panel>
+              </content>
+            </Page>
+         </pages>
+      </App>
+   </Shell>
+</mvc:View>

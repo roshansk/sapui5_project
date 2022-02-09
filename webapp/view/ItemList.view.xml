@@ -1,0 +1,25 @@
+<mvc:View
+    controllerName=""
+    xmlns="sap.m"
+    xmlns:mvc="sap.ui.core.mvc">
+    
+    <Panel 
+        backgroundDesign="Transparent"
+        class="sapUiBorderTop">
+        <content>
+
+            <List
+                headerText="Items"
+                class="sapUiTinyMargin" 
+                items="{/inventory}">
+                <items>
+                    <ObjectListItem
+                        id="item"
+                        title="{item}"/>
+                </items>
+            </List>
+
+        </content>
+    </Panel>
+    
+</mvc:View>
